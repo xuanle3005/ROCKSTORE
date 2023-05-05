@@ -1,0 +1,242 @@
+#appbar-bg {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+#appbar-content {
+    height: 75px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #E2E2E2
+}
+
+#appbar-logolink {
+    margin: auto 0px auto 0px;
+}
+
+#appbar-logo {
+    height: 55px;
+    pointer-events: none;
+}
+
+#appbar-temp {
+    margin: auto 0px auto 15px;
+}
+
+#appbar-sb-wrapper {
+    margin: auto 0px auto 15px;
+    display: flex;
+}
+
+.appbar-searchbar {
+    height: 40px;
+    width: 30vw;
+    border-radius: 5px 0px 0px 5px;
+    border: 0px;
+    font: 1em "Fira Sans", sans-serif;
+    padding: 0px 0px 0px 10px;
+    box-sizing: border-box;
+    outline: 0px;
+    background-color: #E2E2E2;
+}
+
+.appbar-searchbar:hover {
+    background-color: #CBCBCB;
+}
+
+#appbar-searchbutton {
+    height: 40px;
+    width: 40px;
+    border-radius: 0px 5px 5px 0px;
+    border: 0px;
+    background-color: darkred;
+    padding: 0px;
+}
+
+#appbar-searchbutton:hover {
+    background-color: rgb(97, 3, 3);
+}
+
+#appbar-searchbutton:active {
+    box-shadow: 0px 0px 5px lightgray;
+}
+
+#appbar-searchicon {
+    margin: auto;
+}
+
+#appbar-itemgroup {
+    margin: auto 0px auto auto;
+    display: flex;
+}
+
+.appbar-item {
+    display: flex;
+    color: #111111;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.appbar-item:hover, .appbar-itemicon:hover {
+    color: #E2E2E2;
+}
+
+.appbar-item:active .appbar-itemicon:active {
+    color: #CBCBCB;
+}
+
+.appbar-itemicon {
+    margin: auto 0px auto 0px;
+    cursor: pointer;
+}
+
+
+
+.appbar-searchcontent {
+    top: 76px;
+    margin: 0px 0px 0px 15px;
+    width: calc(30vw + 40px);
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+}
+
+#appbar-dimmer {
+    background-color: #11111149;
+    width: 100%;
+    height: calc(100% - 75px);
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    left: 0px;
+    animation: darken 1s;
+}
+
+#appbar-burgerIcon {
+    background-color: transparent;
+    margin-left: auto;
+    border: 0px;
+    outline: 0px;
+}
+
+#appbar-burgerIcon:hover {
+    color: #E2E2E2;
+}
+
+#appbar-burgerIcon:active {
+    color: #CBCBCB;
+}
+
+#appbar-closeIcon {
+    background-color: transparent;
+    margin-left: auto;
+    border: 0px;
+    outline: 0px;
+}
+
+#appbar-closeIcon:hover {
+    color: #E2E2E2;
+    animation: spin 0.5s;
+
+}
+
+#appbar-closeIcon:active {
+    color: #CBCBCB;
+}
+
+#appbar-menu {
+    position: relative;
+    width: 50vw;
+    background-color: white;
+    z-index: 2;
+}
+
+#appbar-menu a {
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+}
+
+.appbar-menuItem, .appbar-menuItemNH, .appbar-SearchItems {
+    height: 40px;
+    border-top: 1px solid #E2E2E2;
+    display: flex;
+    direction: row;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.appbar-menuItemNH {
+    cursor: default;
+}
+
+.appbar-SearchItems {
+    height: fit-content;
+}
+
+.appbar-menuItem h3, .appbar-menuItemNH h3 {
+    margin: 0px 15px 0px auto;
+}
+
+.appbar-menuItem:hover, .appbar-SearchItems:hover {
+    background-color: #E2E2E2;
+}
+
+.appbar-menuAnimIn {
+    animation: inwards 1s;
+}
+
+.appbar-menuAnimOut {
+    height: 0px; 
+    width: 0px;
+    animation: outwards 1s;
+}
+
+.appbar-Dead {
+    height: 0px; 
+    width: 0px;
+}
+
+#appbar-OrderSearchGroup {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: calc(100vh - 75px);
+    overflow-y: auto;
+}
+
+/* Change later dirty */
+.appbar-DirtyOveride {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.appbar-DirtySearch {
+    width: calc(100% - 40px) !important;
+}
+
+@keyframes inwards {
+    from {right: -50vw}
+    to {right: 0px}
+}
+
+@keyframes outwards {
+    from {right: 0px; height: 100%; width: 50vw;}
+    to {right: -50vw;}
+}
+
+@keyframes spin {
+    from {transform: rotate(0);}
+    to {transform: rotate(180deg)}
+}
+
+@keyframes darken {
+    from {opacity: 0;}
+    to {opacity: 1}
+}
+
+@keyframes lighten {
+    from {opacity: 1;}
+    to {opacity: 0}
+}

@@ -1,0 +1,193 @@
+#payment-Body {
+    width: 90%;
+    margin: 25px auto 50px auto;
+    font-family: "Fira Sans", sans-serif;
+}
+
+#payment-Body h2 {
+    border-bottom: 1px solid #E2E2E2;
+    margin: 25px 0px 0px 0px;
+    padding-bottom: 25px;
+}
+
+#payment-BranchRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.payment-MapItem {
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    border: 2px solid transparent; 
+    user-select: none;
+    width: 404px;
+}
+
+.payment-MapItem img {
+    pointer-events: none;
+}
+
+.payment-MapItemLeft {
+    margin-right: 50px;
+}
+
+.payment-MapItemRight {
+    margin-left: 50px;
+}
+
+.payment-MapItem:hover, .payment-MapItemSelect {
+    border: 2px solid #8B0000; 
+    cursor: pointer;
+}
+
+.payment-Headers {
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.payment-AddressRow {}
+
+.payment-AddressRow input {
+    height: 35px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background-color: #E2E2E2;
+    border-radius: 5px;
+    width: 35%;
+    border: 1px solid transparent;
+}
+
+.payment-AddressRow input:hover, .payment-AddressRow input:focus{
+    background-color: #CBCBCB;
+}
+
+.payment-message {
+    color: red;
+    margin-left: 10px;
+}
+
+.payment-invalid {
+    background-color: lightpink !important;
+    border: 1px solid red !important;
+}
+
+.payment-AddressRow h5 {
+    margin-bottom: 5px;
+}
+
+.payment-AddressRow button {
+    margin-top: 25px;
+    height: 35px;
+    width: calc(35% + 10px);
+    background-color: #757252;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.payment-AddressRow button:hover {
+    background-color: #696749;
+}
+
+.payment-AddressRow button:active {
+    background-color: #5c5a3f;
+    box-shadow: 1px 1px 0px gray;
+}
+
+#payment-ButtonGroup {
+    width: calc(35% + 10px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#payment-ButtonGroup button {
+    width: 100%;
+}
+
+#payment-Total {
+    width: calc(35% + 10px);
+
+    margin-top: 25px;
+    border: 1px solid #E2E2E2;
+    height: min-content;
+}
+
+#payment-TotalHeader {
+    padding: 25px 25px 25px 25px;
+    margin: 0px;
+    background-color: #EFEFEF;
+}
+
+#payment-TotalGroup {
+    margin: 25px 25px 15px 25px;
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 10px;
+}
+
+.payment-TotalItems {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.payment-TotalNums {
+    margin-right: auto;
+}
+
+.payment-TotalItems h4 {
+    margin: 0px auto 0px 25px;
+    color: darkgreen;
+}
+
+.payment-TotalOrderNum {
+    margin-right: 25px;
+    color: darkgreen;
+}
+
+@media screen and (max-width: 950px) {
+    
+    .payment-MapItem {
+        flex-shrink: 0;
+    }
+
+    #payment-BranchRow {
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+
+    .payment-MapItemLeft, .payment-MapItemRight {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 25px;
+    }
+
+    .payment-AddressRow input {
+        width: 100%;
+    }
+
+    .payment-AddressRow button, #payment-ButtonGroup {
+        width: calc(100% + 10px);
+    }
+
+    #payment-RadioGroup {
+        width: 482px;
+    }
+
+    #payment-Total {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    #payment-RadioGroup {
+        flex-grow: 1;
+    }
+}

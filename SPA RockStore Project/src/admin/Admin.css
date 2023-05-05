@@ -1,0 +1,63 @@
+#admin-Body {
+    width: 80vw;
+    margin: 0px 10vw 0px 10vw;
+    font-family: "Fira Sans", sans-serif;
+}
+
+#admin-Body h2 {
+    border-bottom: 1px solid #E2E2E2;
+    margin: 25px 0px 0px 0px;
+    padding-bottom: 25px;
+}
+
+#admin-QueryRow {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+}
+
+#admin-QueryRowText {
+    padding-left: 10px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #E2E2E2;
+    margin: auto 0px auto 0x;
+    width: calc(100% / 2);
+}
+
+#admin-QueryRowText:hover, #admin-QueryRowText:focus{
+    background-color: #CBCBCB;
+}
+
+#admin-QueryRow h3 {
+    margin: auto 15px auto 0px;
+}
+
+#admin-QueryRow button {
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: darkred;
+    color: white;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+#admin-QueryRow button:hover {
+    background-color: rgb(97, 3, 3);
+}
+
+#admin-QueryRowFile {
+    margin: auto 0px auto 0px;
+}
+
+#admin-NothingText {
+    margin-top: 50px;
+}
+
+#admin-ResultsGroup {
+    overflow-x: auto;
+    overflow-y: visible;
+}

@@ -1,0 +1,31 @@
+.aboutCard {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #E2E2E2;
+    background-color: #EFEFEF;
+    margin-bottom: 25px;
+}
+
+.aboutCard img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.aboutCard-Text {
+    background-color: #EFEFEF;
+}
+
+.aboutCard-Text h3, .aboutCard-Text h4, .aboutCard-Text p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.aboutCard-Text h3 {
+    margin-top: 10px;
+}
+
+.aboutCard-Text p {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}

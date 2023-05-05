@@ -1,0 +1,122 @@
+.signup-body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100%;
+}
+
+.signup-inner {
+    margin: 25px;
+}
+
+.signup-card {
+    position: relative;
+    border: 1px solid lightgray;
+    flex-wrap: wrap;
+    height: 1000px;
+    width: min(50vw, 450px);
+    border-radius: 5px;
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+.signup-input {
+    border: 1px solid lightgray;
+    height: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.signup-input:focus {
+    outline: 1px solid gray;
+}
+
+.signup-gap {
+    margin-bottom: 35px;
+}
+
+.signup-gap-button {
+    color: #1F75CB;
+    border: 0px;
+    font-size: 1em;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 35px;
+    user-select: none;
+}
+
+.signup-gap-button:hover {
+    border-bottom: 1px solid #1F75CB;
+    margin-bottom: 34px;
+}
+
+.signup-gap-button:active {
+    background-color: lightgray;
+}
+
+.signup-gap-message {
+    color: red;
+    margin-bottom: calc(35px - 1em);
+}
+
+.signup-invalid {
+    background-color: lightpink;
+    border: 1px solid red;
+}
+
+.signup-submit {
+    position: absolute;
+    background-color: #757252;
+    border-radius: 5px;
+    color: white;
+    margin: 0px 25px 15px 25px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 3em;
+    border: 0px;
+    transition-duration: 0.1s;
+    user-select: none;
+    width: calc(100% - 50px);
+}
+
+.signup-submit:hover {
+    background-color: #696749;
+    cursor: pointer;
+}
+
+.signup-submit:active {
+    background-color: #5c5a3f;
+    box-shadow: 1px 1px 0px gray;
+}
+
+.signup-inner div label {
+    user-select: none;
+    height: fit-content;
+}
+
+.signup-inner div label input {
+    scale: 1.3;
+}
+
+@media (width < 641px) {
+    .signup-card {
+        width: 75%;
+    }
+}
+
+/*
+    For mobile screens
+*/
+@media screen and (max-width: 430px) {
+    .signup-card {
+        width: 100%;
+    }
+}

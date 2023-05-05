@@ -1,0 +1,10 @@
+## To run
+npm install
+npm run dev             -- To run a frontend development server.
+npm run build           -- To build the static HTML files to serve.
+
+
+The landing page is localhost:9000/main.html 
+
+This project integrated a "Smart Customer Service" SCS Web Application that supports online
+shopping and delivery, interacting with MariaDB to store store items, orders and account information.

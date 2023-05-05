@@ -1,0 +1,36 @@
+.cartItem-Body {
+    border-bottom: 1px solid #E2E2E2;
+    display: flex;
+}
+
+.cartItem-Body:hover {
+    background-color: #c2c2c2;
+}
+
+.cartItem-Body img {
+    width: 100px;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}   
+
+.cartItem-Body-Buttons {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.cartItem-Body div a {
+    text-decoration: none;
+    color: #007185;
+}
+
+.cartItem-Body div a p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cartItem-Body div a:hover {
+    text-decoration: underline;
+}

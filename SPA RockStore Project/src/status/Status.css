@@ -1,0 +1,150 @@
+#status-Body {
+    width: 90%;
+    margin: 25px auto 50px auto;
+    font-family: "Fira Sans", sans-serif;
+}
+
+#status-Body h2 {
+    border-bottom: 1px solid #E2E2E2;
+    margin: 25px 0px 0px 0px;
+    padding-bottom: 25px;
+}
+
+#status-Body h3 {
+    background-color:#E2E2E2;
+    padding: 25px;
+    margin-top: 0px;
+}
+
+#status-ItemList {
+    margin-left: 25px; 
+    border: 1px solid #C2C2C2;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#status-ItemList span {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#status-Details {
+    margin-left: 25px;
+    flex-grow: 1;
+    border: 1px solid #C2C2C2;
+}
+
+#status-Details span {
+    width: 100%;
+    display: block;
+    margin-left: 25px;
+}
+
+#status-DetailGroup {
+    display: flex;
+    margin-top: 25px;
+}
+
+#status-Map {
+    flex-shrink: 0;
+}
+
+.status-ReviewCard {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.status-ReviewText {
+    flex-grow: 3;
+}
+
+.status-ReviewImg img {
+    width: 512px;
+    height: 512px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.status-ReviewGroup {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.status-ReviewInput {
+    height: 35px;
+    border-radius: 5px;
+    background-color: #E2E2E2;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    width: 50%;
+}
+.status-ReviewGroup textarea, #status-StoreReview textarea {
+    border-radius: 5px;
+    background-color: #E2E2E2;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 10px;
+}
+
+#status-StoreReview {
+    border-bottom: 1px solid #C2C2C2;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+.status-StoreWrapper {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#status-Body button {
+    height: 35px;
+    width: 100%;
+    background-color: #757252;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#status-Body button:hover {
+    background-color: #696749;
+}
+
+#status-Body button:active {
+    background-color: #5c5a3f;
+    box-shadow: 1px 1px 0px gray;
+}
+
+@media screen and (max-width: 950px) {
+    #status-DetailGroup, .status-ReviewCard {
+        display: block;
+    }
+
+    #status-ItemList, #status-Details  {
+        margin-left: 0px;
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #status-Map, .status-ReviewImg {
+        display: flex;
+    }
+
+    .status-ReviewImg img {
+        flex-shrink: 3;
+        width: 100%;
+        height: auto;
+    }
+
+    .status-ReviewInput {
+        width: calc(100% - 12px);
+    }
+}

@@ -1,0 +1,21 @@
+.reviewCard-Body {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.reviewCard-NameRow {
+    display: flex;
+}
+
+.reviewCard-Date {
+    margin-left: auto;
+}
+
+.reviewCard-RatingRow {
+    display: flex; 
+    margin: 0px 0px 10px 0px;
+}
+
+.reviewCard-Title {
+    margin: auto 0px auto 10px;
+}

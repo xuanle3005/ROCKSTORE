@@ -1,0 +1,134 @@
+#item-Body {
+    width: 80%;
+    margin: 25px auto 0px auto;
+    font-family: "Fira Sans", sans-serif;
+}
+
+#item-DescriptionGroup {
+    display: flex;
+    width: 100%;
+}
+
+#item-DescriptionGroup img {
+    display: block;
+    max-width: 512px;
+    max-height: 512px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#item-TitleGroup {
+    width: 100%;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+#item-Title {
+    margin: 10px 0px 10px 0px;
+}
+
+#item-RatingRow {
+    display: flex; 
+    border-bottom: 1px solid #E2E2E2; 
+    padding-bottom: 10px;
+}
+
+#item-RatingRowNumerical {
+    margin: auto 0px auto 10px;
+}
+
+#item-PriceRow {
+    display: flex;
+    border-bottom: 1px solid #E2E2E2; 
+    margin-top: 10px; 
+    padding-bottom: 10px;
+}
+
+#item-Price {
+    margin-top: auto; 
+    margin-bottom: auto; 
+    font-size: 1.25em;
+}
+
+#item-CartButton {
+    display: flex; 
+    margin-left: auto; 
+    background-color: green; 
+    color: white; 
+    height: 35px; 
+    border-radius: 5px; 
+    outline: none; 
+    border: none;
+    cursor: pointer;
+}
+
+#item-CartButton:hover {
+    background-color: rgb(7, 112, 7);
+}
+
+#item-CartButton:active {
+    background-color: darkgreen;
+}
+
+.item-Center {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#item-ReviewGroup {
+    display: flex;
+}
+
+#item-RatingGroup {
+    width: 512px;
+}
+
+.item-RatingGroupRow {
+    display: flex;
+}
+
+.item-RatingGroupPercent {
+    font-size: 0.90em; 
+    color: gray; 
+    margin-right: 10px;
+}
+
+.item-RatingGroupPercentOne {
+    margin-left: 1.8em;
+}
+
+.item-RatingGroupPercentTwo {
+    margin-left: calc(5px + 0.9em);
+}
+
+.item-RatingGroupPercentThree {
+    margin-left: 10px;
+}
+
+
+#item-ReviewList {
+    width: calc(100% - 512px); 
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 940px) {
+    #item-DescriptionGroup {
+        display: block;
+    }
+
+    #item-DescriptionGroup img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #item-ReviewGroup {
+        display: block;
+    }
+    
+    #item-RatingGroup {
+        width: 100%;
+    }
+
+    #item-ReviewList {
+        width: 100%;
+    }
+}
